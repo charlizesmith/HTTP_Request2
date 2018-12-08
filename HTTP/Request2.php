@@ -955,7 +955,7 @@ class HTTP_Request2 implements SplSubject
         }
         // rethrow the exception
         if (!empty($e)) {
-            throw $e;
+            return false;
         }
         return $response;
     }
